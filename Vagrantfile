@@ -66,6 +66,6 @@ Vagrant.configure("2") do |config|
   # config.vm.provision "shell", inline: <<-SHELL
   #   apt-get update
   # SHELL
-    config.vm.provision "shell", path:"setup.sh"
+    config.vm.provision "shell", path:"setup-57.sh"
 
 end
