@@ -2,9 +2,9 @@
 yum -y update
 yum -y install epel-release yum-utils wget
 yum -y localinstall https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
-
 yum -y update
-
+# additional changes so that jira will be able to connect
+cp -rf my.cnf /etc/
 yum -y install mysql-community-server
 systemctl enable mysqld
 systemctl start mysqld
